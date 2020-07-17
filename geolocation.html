@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+            <title> GEOLOCATION</title>
+    </head>
+    <body> 
+
+        <script>
+            // this geo location will get the users longtitude and latitude.
+            //  also it accepts a call back function. argument position
+            //  represents your current position
+            navigator.geolocation.getCurrentPosition(function(position) {
+                document.write(position.coords.latitude + "," + position.coords.longitude);
+            });
+            // document.write will write to your window. now enter your cordinates in google maps
+        </script>
+    </body>
+
+
+
+
+</html>
