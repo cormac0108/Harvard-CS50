@@ -1,0 +1,39 @@
+
+react has webpack underneath the hood so it does the bundling of code for us.  import React from 'react';
+react is a view library. react dom can be used to render to DOM sites. react native can be used to render 
+to mobile phones.   
+i want the reactdom package to use the function render   and it renders whatever is in the parameters . 
+destructuring: import {component}    also /app.js    make sure you change your files to javacsript babel. 
+
+component has the rule that it must render something.  creating your own custom components.  one parent that 
+has children. if your building a component it should be capitalized e.g Hello 
+cra is so aweomse  it shows you exactly what the errors are.   
+export default Hello   to export the class / component.   dfault meaning one thing. 
+within the render function we tell it what we want to return.   now test your website in the browser (using
+live-server)   tada!  we just created our very first react component.  return expects a single thing
+you cant give it multiple lines.   the cool tachyons css package.   predefined things   
+npm install tachyons   now import tachyons in your index.js  file.   
+tachyons style input.   search it. inline styles       class = " f1 tc"   f1 = font 1 and tc = text-center
+npm start        in the terminal  to make sure your server is running.    one trick  react is great at giving 
+you errors. why className  instead of class   on your component?    JSX  -  it allows you to write this 
+html like synthax.  in a js file!   inreact   each component is its own sepearate universe.  
+separation of concerns?     react uses JSX to create their virtual DOM.   as long as you wrap it in 
+brackets   return ()   we can use html   class is a reserved keyword in Js  so just do className. 
+we can add props   to our render.    you now have access in hello.js  to props.  greeting. {this.props.greeting} 
+this = this object   props = has properties   greetings = which is greetings.   
+the synthax may be confusing but in reality this is just a function.   its just functions.  react - we 
+are creating functions that take parameters.  
+
+Robofriends react project -  lets build the card component.  start deleting things we dont need. such as app.js 
+lets  create a card component.    instead of the class way we will build a function.  const Card = (){ }
+if we remove import react we get errors. so.  react  must be in  scope when using JSX 
+use robohash  API   to get random robot profile images.  it gives you random robots. change the ending of
+the https url path.  return a title?  we need to return one thing.   make sure it is one things. one element.
+in this case the div element. on reactdomrender  you can render multiple card components. 
+thanks to tchyons  the package we can use really nice synthax.  we want it to be dynamic so we need props 
+properties   an array of objects - our robots.js  file  an array of objects.  export ... means the 
+file could have nultiple exports.   for ones that arent default you have to destructure it 
+import {robots} from './robots;         import { robots, cats } from  './robots.js';
+now we can give it some properties. (our components)   we need to now go into card.js  and 
+allow our component to accept parameters.  (props)    it is a js expression so wrap it in curly brackets
+{props.name}
